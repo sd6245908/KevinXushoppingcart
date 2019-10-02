@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <style>
+        #header {
+            background: #F6F6F7;
+            color: #222222;
+            text-align: right;
+        }
+
+        #ok {
+            background-color: Transparent;
+            border-color: Transparent;
+            color: #888888
+        }
+
+        #tu {
+            text-align: right;
+        }
+
+        #tupian {
+            height: 600px;
+            width: auto;
+        }
+
+        #name {
+            font-size: x-large
+        }
+
+        hr {
+            width: 500px;
+        }
+
+        #tex {
+            color: #888888;
+            word-break: keep-all;
+            width: 500px;
+        }
+
+        #star {
+            color: #C90000
+        }
+
+        #szi {
+            color: #888888
+        }
+
+        #sel {
+        }
+
+            #sel:hover {
+                background: black;
+                color: white
+            }
+
+        #size {
+            color: #222222;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <br>
+
+    <div id="header" class="col-md-12">
+        <button id="ok">
+            my cart(<span id="total">0</span>)
+        </button>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div id="tu" class="col-md-6">
+            <img id="tupian" src="classic-tee.jpg">
+        </div>
+        <div class="col-md-6">
+            <p id="name">
+                Classic Tee
+            </p>
+            <hr align="left">
+            $75.00
+            <hr align="left">
+
+            <p id="tex">
+                National environmental standards (NES) are regulations issued under section 43
+                of the Resource Management Act and can apply regionally or nationally. align
+                environmental standards (NES) are regulations issued under section 43 of the
+                Resource Management Act and can apply regionally or nationally
+            </p>
+            <br>
+            <p id="szi">
+                SIZE<span id="star">*</span><span id="size"></span>
+            </p>
+
+            <button type="button" class="btn btn-default" id="1">S</button>
+            <button type="button" class="btn btn-default" id="2" >M</button>
+            <button type="button" class="btn btn-default" id="3">L</button>
+            <br>
+            <br>
+            <button type="button" id="sel" class="btn btn-default">ADD TO CART</button>
+        </div>
+    </div>
+
+    <script>
+        var choose = document.getElementById("size"); 
+        var choose1 = document.getElementById("1"); 
+        var choose2 = document.getElementById("2"); 
+        var choose3 = document.getElementById("3"); 
+        var choose3 = document.getElementById("sel"); 
+        var choose3 = document.getElementById("total"); 
+        var i = 0;
+
+        choose1.onclick = function () {
+
+            choose.innerHTML = " S";
+        }
+        choose2.onclick = function () {
+            choose.innerHTML = " M";
+        }
+        choose3.onclick = function () {
+            choose.innerHTML = " L";
+        }
+        sel.onclick = function () {
+            i++;
+            total.innerHTML = i;
+        }
+
+
+    </script>
+
+</body>
+
+
+</html>
